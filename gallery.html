@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Luna's Site!</title>
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+
+            <!--Adding top nav and responsiveness-->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="nodisp">Home!</a>
+            <a href="about.html" class="nodisp">About Me!</a>
+            <a href="activities.html" class="nodisp">Activities!</a>
+            <a href="gallery.html"class="active">Photo Gallery!</a>
+            <a href="contact.html" class="nodisp">Contact Info!</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+</header>
+            <!--Adding slideshow gallery-->
+            <!--Container for image gallery-->
+    <div class="container">
+
+            <!--Adding full width images with number text-->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+          <img src="LUNA/gallery1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+          <img src="LUNA/gallery2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+          <img src="LUNA/gallery3.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+          <img src="LUNA/gallery4.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+          <img src="LUNA/gallery5.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+          <img src="LUNA/gallery6.jpg" style="width:100%">
+      </div>
+
+            <!--Adding the next and previous buttons-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!--Adding image text-->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+                <!--Adding thumbnail images-->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="LUNA/gallery1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Luna Exploring Cherokee">
+            </div>
+
+            <div class="column"> 
+                <img class="demo cursor" src="LUNA/gallery2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Luna Watching the Cows">
+            </div>
+
+            <div class="column">
+                <img class="demo cursor" src="LUNA/gallery3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Luna Chilling in Bed">
+            </div>
+
+            <div class="column">
+                <img class="demo cursor" src="LUNA/gallery4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Luna Hiding at the Dog Park">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="LUNA/gallery5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Luna Sleeping">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="LUNA/gallery6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Luna Laying at the Farm">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2019 Will and Luna Sanders
+    </footer>
+    
+    <!-- JavaScript -->
+    
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

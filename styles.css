@@ -1,0 +1,466 @@
+            /** Top nav **/
+
+/** Adding background color **/
+
+.topnav {
+    background-color:#333;
+    overflow:hidden;
+}
+
+.topnavresponsive {
+    background-color:#333;
+    overflow:hidden;
+}
+
+/** Styling the nav links **/
+
+.topnav a {
+    float:left;
+    display:block;
+    color:white;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.topnavresponsive a {
+    float:left;
+    display:block;
+    color:white;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 17px;
+    font-family:'Roboto Condensed', sans-serif;
+}
+
+/** Styling link hover effect **/
+
+.topnav a:hover {
+    background-color:#ddd;
+    color:black;
+}
+
+/** Adding active class to the current page **/
+
+.topnav a.active {
+    background-color:#4caf50;
+    color: white;
+}
+
+
+
+/** Hiding the link that opens and closes the topnav on small screens **/
+
+.topnav .icon {
+    display:none;
+}
+
+
+/** Styling the "Go to top" button **/
+/*
+
+#myBtn {
+    display:none;
+    position:fixed;
+    bottom:20px;
+    right:30px;
+    z-index:99; * Ensure no overlapping *
+    border:none;
+    outline:none;
+    background-color:red;
+    color:white;
+    cursor:pointer;
+    padding:15px;
+    border-radius:10px;
+    font-size:18px;
+}
+*/
+
+/** Button Hover **/
+/*
+
+#myBtn:hover {
+    background-color:lightgray;
+}
+*/
+
+
+
+
+
+
+            /** Home Page **/
+
+/** h1 Title**/
+
+.title {
+    text-align:center;
+    /*font-family:"PT serif", serif;*/
+    font-family:'Roboto Condensed', sans-serif;
+    text-transform:uppercase;
+    font-size: 40px;
+    color:white;
+}
+/** Title Text Outline **/
+
+.title {
+	text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+/** Background Image **/
+
+.bg-img {
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-size:contain;
+}
+
+/** Second responsive background. Setting to lower z index than above **/
+
+#bgimg2 {
+    min-height:100%;
+    width: 100%;
+    height:auto;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: -3;
+    background-size: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* About Me Page */
+
+/** Styling Images and P **/
+
+.flex-container {
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    background-color:black;
+}
+
+.flex-container img {
+    float:left;
+/*    padding: 0 20px 20px 0;*/
+    height: 600px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.flex-container div {
+    float:right;
+    margin: 10px;
+    padding: 10px;
+}
+
+.flex-container p {
+    display:block;
+    font-family:'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 20px 0 ;
+    padding: 100px 40px 100px; 40px;
+    color:white;
+}
+
+/** Styling last <p> tag because the amount of text **/
+
+.flex-container .lastabt {
+    margin: 30px;
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /** Activities Page **/
+
+/** Container **/
+
+.activ-gallery {
+    width: 100%;
+    height: auto;
+    overflow:none;
+    clear:both;
+}
+
+/** Activity Images **/
+
+.act-column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row1::after {
+    content: "";
+    clear:both;
+    display:table;
+}
+
+.row2::after {
+    content; "";
+    clear:both;
+    display:table;
+}
+
+#act1, #act2, #act3, #act4, #act5, #act6 {
+    border:solid;
+    height:100%;
+    background-size: contain;
+}
+
+.act-column p {
+    margin: 5px;
+    font-family:'Roboto Condensed', sans-serif;
+    padding: 5px 5px;
+    text-align:center;
+}
+
+#act3 {
+    height:430.35px;
+}
+
+#act4, #act5, #act6 {
+    height: 685.28px;
+}
+
+#act6 img {
+    height:582.78px;
+}
+
+/*.act-column p:hover {
+    transform: scale(1.2);
+    border-radius: 10px;
+    
+}*/
+
+.row1, .row2 div {
+    background-color:black;
+}
+
+.act-column p {
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+            /** Photo Gallery Page **/
+
+
+/** Styling photo gallery **/
+
+* {
+    box-sizing:border-box;
+}
+
+/** Positioning image container **/
+
+.container {
+    position:relative;
+    background-size:contain;
+}
+
+/** Hide images by default **/
+
+.mySlides {
+    display:none;
+}
+
+/** Add pointer when hovering over thumbnail **/
+
+.cursor {
+    cursor:pointer;
+}
+
+/** Next and previous buttons **/
+
+
+.prev,
+.next {
+    cursor:pointer;
+    position:absolute;
+    top: 40%;
+    width:auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight:bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/** Position the next button to the right **/
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/** On hover, add black background slightly transparent **/
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/** Number text (1/3...) **/
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/** Container for image text **/
+
+.caption-container {
+    text-align:center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display:table;
+    clear:both;
+}
+
+/** Six columns side by side **/
+
+.column {
+    float:left;
+    width: 16.66%;
+}
+
+/** Add a transparent effect for thumbnails **/
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+/** Footer **/
+
+footer {
+    position:fixed;
+    left:0;
+    bottom:0;
+    width: 100%;
+    color:white;
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Contact Page **/
+
+.bk-color {
+    background-color:black;
+}
+
+.contact-info img {
+    height:250px;
+    width:250px;
+    padding: 15px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right:auto;
+    background-color:white;
+    z-index:2;
+    border-radius:30px;
+    margin: 15px;
+}
+
+.contact-info {
+    text-align:center;
+}
+
+.more-info p {
+/*    font-family:"PT serif", serif;*/
+    font-family:'Roboto Condensed', sans-serif;
+    font-size: 50px;
+    text-align:center;
+    color:white;
+}
+
+/** Adding hover rotation **/
+
+#icons:hover {
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+
+
+
+
+
+
+
+
